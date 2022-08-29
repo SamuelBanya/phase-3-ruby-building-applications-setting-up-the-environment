@@ -1,7 +1,12 @@
-#!/usr/bin/env ruby 
+#!/usr/bin/env ruby
 
-require_relative '../lib/garden.rb'
-require_relative '../lib/plant.rb'
+# Commenting these out as we are only importing a single environment file later on:
+# require_relative '../lib/garden.rb'
+# require_relative '../lib/plant.rb'
+
+# NOTE: by using this syntax, we only have to have a single 'environment' file that will contain the
+# necessary 'import' statements aka the 'require_relative' statements
+require_relative '../config/environment'
 
 lawn = Garden.new(name: 'Front Lawn')
 
